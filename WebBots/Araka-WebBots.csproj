@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Araka_WebBots</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.60.0" />
+    <PackageReference Include="Google.Cloud.Dialogflow.V2" Version="4.9.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.53.0" />
+    <PackageReference Include="Grpc.Core" Version="2.46.6" />
+    <PackageReference Include="Grpc.Tools" Version="2.54.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="IBM.Watson.Assistant.v2" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="google\api\annotations.proto" GrpcServices="Client" />
+		<Protobuf Include="google\api\http.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\asr\v1\recognizer.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\asr\v1\resource.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\asr\v1\result.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\dlg\v1\dlg_interface.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\dlg\v1\dlg_messages.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\dlg\v1\common\dlg_common_messages.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\nlu\v1\interpretation-common.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\nlu\v1\multi-intent-interpretation.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\nlu\v1\result.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\nlu\v1\runtime.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\nlu\v1\single-intent-interpretation.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\tts\v1\nuance_tts_v1.proto" GrpcServices="Client" />
+		<!--<Protobuf Include="nuance\rpc\error_details.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\rpc\status.proto" GrpcServices="Client" />
+		<Protobuf Include="nuance\rpc\status_code.proto" GrpcServices="Client" />-->
+	</ItemGroup>
+
+</Project>
