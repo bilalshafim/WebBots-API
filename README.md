@@ -5,7 +5,7 @@ _I wrote this API intially for internal use at Araka Systems. I have taken permi
 
 This project is built with ASP.NET Core 6.
 
-To deploy this service on GCP Container Registry
+To post this service on GCP Container Registry
 
 docker build -t gcr.io/<project-name>/<service-name> .
 
