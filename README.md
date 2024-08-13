@@ -1,5 +1,5 @@
 # WebBots-API
-Deployment ready API for efficient communication with NLU bots. 
+API for efficient communication with NLU bots. 
 
 This project is built with ASP.NET Core 6.
 
