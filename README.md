@@ -1,8 +1,6 @@
 # WebBots-API
 Deployment ready API for efficient communication with NLU bots. 
 
-_I wrote this API intially for internal use at Araka Systems. I have taken permission from the team at Araka Systems to make it public on my own github for the purpose of showing proof of work for future opportunities._
-
 This project is built with ASP.NET Core 6.
 
 To post this service on GCP Container Registry
